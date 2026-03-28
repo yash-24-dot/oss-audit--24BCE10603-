@@ -1,11 +1,11 @@
-# oss-audit-[YOUR ROLL NUMBER]
+# oss-audit-24BCE10603
 
 **Open Source Software Audit — VITyarthi**
 
 | Field | Details |
 |---|---|
-| **Student Name** | **[YOUR FULL NAME]** |
-| **Roll Number** | **[YOUR ROLL NUMBER]** |
+| **Student Name** | **Yash Tripathi** |
+| **Roll Number** | **24BCE10603** |
 | **Chosen Software** | Git (Version Control System) |
 | **Licence** | GNU General Public Licence v2 (GPL v2) |
 | **Course** | Open Source Software — VITyarthi |
@@ -21,7 +21,7 @@ This repository is the practical submission for the Open Source Software Audit a
 ## Repository Structure
 
 ```
-oss-audit-[ROLLNUMBER]/
+oss-audit-24BCE10603/
 ├── README.md
 ├── script1_system_identity.sh
 ├── script2_package_inspector.sh
@@ -88,8 +88,8 @@ Prompts the user with three interactive questions about their relationship to op
 
 ### Step 1 — Clone the repository
 ```bash
-git clone https://github.com/[YOUR-GITHUB-USERNAME]/oss-audit-[ROLLNUMBER].git
-cd oss-audit-[ROLLNUMBER]
+git clone https://github.com/yash-24-dot/oss-audit-[ROLLNUMBER].git
+cd oss-audit-24BCE10603
 ```
 
 ### Step 2 — Make scripts executable
