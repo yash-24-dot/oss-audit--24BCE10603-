@@ -22,12 +22,13 @@ This repository is the practical submission for the Open Source Software Audit a
 
 ```
 oss-audit-24BCE10603/
-├── README.md
 ├── 1.sh
 ├── 2.sh
 ├── 3.sh
 ├── 4.sh
-└── 5.sh
+├── 5.sh
+├── README.md
+└──24BCE10603_oss_capstone_project
 ```
 
 ---
