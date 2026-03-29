@@ -35,7 +35,7 @@ oss-audit-24BCE10603/
 ## Script Descriptions
 
 ### Script 1 — System Identity Report
-**File:** `script1_system_identity.sh`
+**File:** `1.sh`
 
 Displays a colour-formatted welcome screen showing the Linux distribution name, kernel version, current logged-in user, home directory, system uptime, current date/time, and a message about the GPL v2 licence covering both Linux and Git.
 
@@ -44,7 +44,7 @@ Displays a colour-formatted welcome screen showing the Linux distribution name, 
 ---
 
 ### Script 2 — FOSS Package Inspector
-**File:** `script2_package_inspector.sh`
+**File:** `2.sh`
 
 Checks whether Git is installed by detecting the package manager (RPM or dpkg). Prints version, licence, and summary metadata. Uses a `case` statement to print a philosophy note about each recognised open-source package.
 
@@ -53,7 +53,7 @@ Checks whether Git is installed by detecting the package manager (RPM or dpkg). 
 ---
 
 ### Script 3 — Disk and Permission Auditor
-**File:** `script3_disk_auditor.sh`
+**File:** `3.sh`
 
 Loops through an array of important system directories (`/etc`, `/var/log`, `/home`, `/usr/bin`, `/tmp`, `/usr/share/doc`) and reports permissions, ownership, and size for each. Also audits Git-specific config file locations separately.
 
@@ -62,7 +62,7 @@ Loops through an array of important system directories (`/etc`, `/var/log`, `/ho
 ---
 
 ### Script 4 — Log File Analyzer
-**File:** `script4_log_analyzer.sh`
+**File:** `4.sh`
 
 Accepts a log file path and optional keyword as command-line arguments. Reads the file line by line counting keyword matches. Implements a do-while style retry loop if the file is empty. Prints a summary with the last 5 matching lines.
 
@@ -71,7 +71,7 @@ Accepts a log file path and optional keyword as command-line arguments. Reads th
 ---
 
 ### Script 5 — Open Source Manifesto Generator
-**File:** `script5_manifesto_generator.sh`
+**File:** `5.sh`
 
 Prompts the user with three interactive questions about their relationship to open-source software. Composes a personalised philosophy statement using a heredoc (`<< EOF`), saves it to a timestamped `.txt` file, and displays it with colour formatting. Ends with an alias tip.
 
@@ -94,48 +94,48 @@ cd oss-audit-24BCE10603
 
 ### Step 2 — Make scripts executable
 ```bash
-chmod +x script1_system_identity.sh
-chmod +x script2_package_inspector.sh
-chmod +x script3_disk_auditor.sh
-chmod +x script4_log_analyzer.sh
-chmod +x script5_manifesto_generator.sh
+chmod +x 1.sh
+chmod +x 2.sh
+chmod +x 3.sh
+chmod +x 4.sh
+chmod +x 5.sh
 ```
 
 ### Step 3 — Run each script
 
 **Script 1 — System Identity Report**
 ```bash
-./script1_system_identity.sh
+./1.sh
 ```
 
 **Script 2 — FOSS Package Inspector**
 ```bash
-./script2_package_inspector.sh
+./2.sh
 ```
 
 **Script 3 — Disk and Permission Auditor**
 ```bash
-./script3_disk_auditor.sh
+./3.sh
 ```
 
 **Script 4 — Log File Analyzer**
 ```bash
 # Default keyword is "error"
-./script4_log_analyzer.sh /var/log/syslog
+./4.sh /var/log/syslog
 
 # Custom keyword
-./script4_log_analyzer.sh /var/log/syslog warning
+./4.sh /var/log/syslog warning
 
 # On Fedora/RHEL
-./script4_log_analyzer.sh /var/log/messages error
+./4.sh /var/log/messages error
 
 # If permission denied, run with sudo
-sudo ./script4_log_analyzer.sh /var/log/syslog
+sudo ./4.sh /var/log/syslog
 ```
 
 **Script 5 — Manifesto Generator**
 ```bash
-./script5_manifesto_generator.sh
+./5.sh
 # Follow the on-screen prompts and press Enter after each answer
 ```
 
