@@ -22,6 +22,7 @@ This repository is the practical submission for the Open Source Software Audit a
 
 ```
 oss-audit-24BCE10603/
+├── screenshots
 ├── 1.sh
 ├── 2.sh
 ├── 3.sh
